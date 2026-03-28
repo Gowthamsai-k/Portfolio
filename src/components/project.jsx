@@ -10,21 +10,21 @@ const projectsData = [
   {
     title: "AI PREDICTIVE ENGINE",
     desc: "Machine learning model predicting real-time data trends with 98% accuracy.",
-    img: "https://via.placeholder.com/600x400/111111/5227FF?text=AI+ENGINE",
+    img: "src/assets/Gemini_Generated_Image_37hs737hs737hs73.png",
     github: "#",
     live: "#"
   },
   {
     title: "NEURAL CHATBOT",
     desc: "Realtime NLP conversational agent built with PyTorch and WebSockets.",
-    img: "https://via.placeholder.com/600x400/111111/5227FF?text=NEURAL+CHAT",
+    img: "src/assets/Gemini_Generated_Image_37hs737hs737hs73.png",
     github: "#",
     live: "#"
   },
   {
     title: "DATA SYNTHESIZER",
     desc: "High-performance analytics dashboard generating synthetic datasets.",
-    img: "https://via.placeholder.com/600x400/111111/5227FF?text=SYNTHESIZER",
+  img: "src/assets/Gemini_Generated_Image_37hs737hs737hs73.png",
     github: "#",
     live: "#"
   }

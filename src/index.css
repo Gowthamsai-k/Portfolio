@@ -237,7 +237,7 @@ body {
   justify-content: center;
   pointer-events: none;
   /* Let clicks pass through to background unless specified */
-  padding: 4vw 4vw;
+  padding: 4vw 0px;
 }
 
 /* Massive text aligned right */

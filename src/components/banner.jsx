@@ -94,7 +94,7 @@ const Banner = () => {
                     </div>
                     <div className="line-wrapper">
                         <h1 className="cinematic-heading uppercase" ref={addToRefs}>
-                            INTELLIGENCE.
+                            INTELLIGENCE
                         </h1>
                     </div>
                     <div className="line-wrapper">
@@ -104,7 +104,7 @@ const Banner = () => {
                     </div>
                     <div className="line-wrapper">
                         <h1 className="cinematic-heading uppercase" ref={addToRefs}>
-                            THE FUTURE.
+                            THE FUTURE
                         </h1>
                     </div>
                 </div>
