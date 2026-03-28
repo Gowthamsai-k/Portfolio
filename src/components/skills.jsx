@@ -1,6 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { SiMongodb } from 'react-icons/si';
+import { FaAws } from 'react-icons/fa';
+import { FiAward } from 'react-icons/fi';
 import DotGrid from './background-hero';
 import './skills.css';
 
@@ -21,23 +24,26 @@ const techSkills = [
 const certifications = [
   {
     id: 'mongo-cert',
-    name: 'MongoDB Certified Python Developer',
-    url: '#',
+    name: 'MongoDB Associate Developer',
+    url: 'https://www.credly.com/badges/c01d6ca1-05b1-4359-b093-68b788e2a129',
     description: 'Verified hands-on MongoDB data engineering and Python integration expertise.',
+    icon: <SiMongodb className="cert-logo mongo-color" />,
   },
   {
     id: 'aws-cert',
     name: 'AWS Cloud Practitioner',
-    url: '#',
+    url: 'https://www.credly.com/badges/c5965c28-e135-4314-85fc-ff423152dd6a',
     description: 'Foundational cloud knowledge and AWS service understanding.',
+    icon: <FaAws className="cert-logo aws-color" />,
   },
 ];
 
 const patent = {
   id: 'patent',
-  name: 'Granted Patent',
-  url: '#',
+  name: 'Granted Design Patent for SMART NECKBAND FOR POSTURE ONITORING AND THERAPEUTIC MASSAGE',
+  url: 'https://drive.google.com/file/d/1mFxKyUI_EixmypSuxbYL852ZWCYBsCw4/view?usp=sharing',
   description: 'Issued patent for an innovative software engineering solution.',
+  icon: <FiAward className="cert-logo patent-color" />,
 };
 
 function Skills() {
@@ -123,9 +129,12 @@ function Skills() {
                 className="cert-item-vibe"
                 type="button"
               >
-                <div className="cert-text">
-                  <strong>{cert.name}</strong>
-                  <span>{cert.description}</span>
+                <div className="cert-content-wrapper">
+                  <div className="cert-icon-box">{cert.icon}</div>
+                  <div className="cert-text">
+                    <strong>{cert.name}</strong>
+                    <span>{cert.description}</span>
+                  </div>
                 </div>
                 <span className="arrow">↘</span>
               </button>
@@ -143,9 +152,12 @@ function Skills() {
         >
           <h3>Innovation (Patent)</h3>
           <div className="achievement-block-vibe">
-            <div className="cert-text">
-              <strong>{patent.name}</strong>
-              <span>{patent.description}</span>
+            <div className="cert-content-wrapper">
+              <div className="cert-icon-box">{patent.icon}</div>
+              <div className="cert-text">
+                <strong>{patent.name}</strong>
+                <span>{patent.description}</span>
+              </div>
             </div>
             <span className="arrow">↘</span>
           </div>

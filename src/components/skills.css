@@ -109,6 +109,46 @@
   gap: 2.5rem;
 }
 
+.cert-content-wrapper {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex: 1;
+}
+
+.cert-icon-box {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  flex-shrink: 0;
+}
+
+.cert-logo {
+  font-size: 2.5rem;
+  transition: transform 0.3s ease;
+}
+
+.cert-item-vibe:hover .cert-logo {
+  transform: scale(1.1);
+}
+
+.mongo-color {
+  color: #47A248;
+}
+
+.aws-color {
+  color: #FF9900;
+}
+
+.patent-color {
+  color: #5227FF;
+}
+
 .cert-item-vibe,
 .achievement-block-vibe {
   background: none;
