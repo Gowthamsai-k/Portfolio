@@ -3,6 +3,7 @@ import About from './components/about';
 import Banner from './components/banner';
 import Projects from './components/project';
 import Connect from './components/connect';
+import Skills from './components/skills';
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
   <Navbar />
   <Banner />
   <About />
+  <Skills />
   <Projects />
   <Connect />
   

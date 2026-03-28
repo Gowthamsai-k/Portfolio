@@ -9,6 +9,7 @@ const Navbar = () => {
   const navItems = [
     { name: "Home", link: "#" },
     { name: "About", link: "#About" },
+    {name : "Skills" , link: "#Skills"},
     { name: "Projects", link: "#Projects" },
     { name: "Connect", link: "#Connect" },
 
@@ -58,7 +59,7 @@ const Navbar = () => {
 
     // Grab all section DOM nodes and observe them after a tiny delay
     setTimeout(() => {
-      const sections = ["Home", "About", "Projects", "Connect"].map(id => document.getElementById(id));
+      const sections = ["Home", "About", "Skills","Projects", "Connect"].map(id => document.getElementById(id));
       sections.forEach(section => {
         if (section) observer.observe(section);
       });

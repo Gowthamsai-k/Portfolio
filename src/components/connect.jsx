@@ -1,8 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { FiGithub, FiLinkedin, FiTwitter, FiMail } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiTwitter, FiMail, FiDownload } from "react-icons/fi";
 import DotGrid from "./background-hero";
+import resumeFile from "../assets/Resume-Gowtham.pdf";
 import "../index.css";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -42,10 +43,21 @@ const Connect = () => {
         <h2 className="huge-heading outline-text">THE FUTURE.</h2>
 
         <div className="social-links">
-          <a href="#" className="social-pill"><FiGithub /> GitHub</a>
-          <a href="#" className="social-pill"><FiLinkedin /> LinkedIn</a>
-          <a href="#" className="social-pill"><FiTwitter /> Twitter</a>
-          <a href="#" className="social-pill"><FiMail /> Email</a>
+          <a
+            href={resumeFile}
+            download="Gowtham_Resume.pdf"
+            className="social-pill"
+            style={{ borderColor: "#5227FF", background: "rgba(82, 39, 255, 0.05)" }}
+          >
+            <FiDownload style={{ color: "#5227FF" }} /> Resume
+          </a>
+          <a href="https://github.com/Gowthamsai-k" className="social-pill"><FiGithub /> GitHub</a>
+          <a href="https://www.linkedin.com/in/gowtham-sai-k-54b8462a4/" className="social-pill"><FiLinkedin /> LinkedIn</a>
+          <a
+            href="mailto:gowthamsai0519@gmail.com"
+            className="social-pill"
+          ><FiMail /> Email
+          </a>
         </div>
       </div>
       <div className="footer-copyright">
