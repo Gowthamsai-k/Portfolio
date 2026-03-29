@@ -398,8 +398,16 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .nav-links {
-    display: none;
+
+  .banner-cinematic-content{
+    top: 50px;
+  }
+  .cinematic-hero-footer{
+    gap: 1rem;
+  }
+  .cinematic-subtext{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
